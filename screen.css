@@ -48,12 +48,20 @@ table {
 }
 
 /*from normalize.css*/
-
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
 fieldset {
   padding: 0.35em 0.75em 0.625em;
+  border: 2px groove;
 }
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
